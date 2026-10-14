@@ -6,17 +6,20 @@ using namespace std;
 int main()
 {
     List original{};
-    List copied{};
+    List copied{} ;
 
     int value{};
     int index{};
 
-    cout << "Enter values (exit by entering negative number): ";
+    cout << "Enter values (exit by entering negative umber): ";
 
     while (cin >> value && value >= 0)
     {
-        insert(original, value);
+        insert(original, value) ;
     }
+
+
+
 
     cout << "List: ";
     print(original);
@@ -31,7 +34,7 @@ int main()
         remove(copied, index);
     }
 
-    cout << "Original list: ";
+    cout << "Original list: " ;
     print(original);
     cout << endl;
 
@@ -47,7 +50,7 @@ int main()
     print(original);
     cout << endl;
 
-    cout << "Copied list: ";
+    cout << "Copied list: " ;
     print(copied);
     cout << endl;
 
